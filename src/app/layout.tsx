@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
-import { WagmiProviderWrapper } from "@/providers/wagmi-provider";
 import { Toaster } from "@/components/ui/toast";
+import { WagmiProviderWrapper } from "@/providers/wagmi-provider";
 
 const inter = Inter({
   variable: "--font-inter",

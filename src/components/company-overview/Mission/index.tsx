@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function Mission() {
+export default function Mission() {
   return (
     <>
       <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center md:text-left flex flex-col lg:flex-row gap-10 lg:items-start items-center">
@@ -21,7 +21,7 @@ export function Mission() {
         </div>
         <Image
           className="mt-10 object-contain"
-          src="/images/mission.png"
+          src="/images/mission/mission.png"
           alt="Mission"
           width={500}
           height={500}

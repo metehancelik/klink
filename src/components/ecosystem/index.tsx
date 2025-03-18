@@ -1,24 +1,26 @@
 "use client";
 
-import Image from "next/image";
-import { Card, CardHeader, CardContent } from "../ui/card";
-import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
-import { cards } from "@/data";
+import Image from "next/image";
+
 import { EcosystemCard } from "./EcosystemCard";
 import { ResourceCard } from "./ResourceCard";
+import { Button } from "../ui/button";
+import { Card, CardHeader, CardContent } from "../ui/card";
 
-export function Ecosystem() {
+import { cards } from "@/data";
+
+export default function Ecosystem() {
   return (
     <section className="mx-auto md-px-4 py-30 sm:px-6 lg:px-8 px-2 text-center md:text-left lg:flex-row gap-10 lg:items-start items-center min-h-[500px] relative text-white rounded-4xl overflow-hidden">
       <Image
-        src="/images/ecosystem.png"
+        src="/images/ecosystem/ecosystem.png"
         alt="Ecosystem"
         fill
         className="hidden lg:block"
       />
       <Image
-        src="/images/ecosystem-bg.png"
+        src="/images/ecosystem/ecosystem-bg.png"
         alt="Ecosystem"
         fill
         className="block lg:hidden rounded-4xl"
@@ -38,7 +40,7 @@ export function Ecosystem() {
           <Card className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)]">
             <CardHeader className="p-0 relative h-full gap-0">
               <Image
-                src="/images/ecosystem-1.png"
+                src="/images/ecosystem/ecosystem-1.png"
                 alt="Ecosystem"
                 className="object-cover rounded-t-xl"
                 width={1400}
@@ -77,7 +79,7 @@ export function Ecosystem() {
           <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F]">
             <CardHeader className="p-0 relative h-[300px] gap-0">
               <Image
-                src="/images/useful_resource-1.png"
+                src="/images/resources/useful_resource-1.png"
                 alt="Ecosystem"
                 className="object-cover"
                 fill
@@ -102,13 +104,13 @@ export function Ecosystem() {
           <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F]">
             <CardHeader className="p-0 relative h-[300px] gap-0">
               <Image
-                src="/images/useful_resource-2-2.png"
+                src="/images/resources/useful_resource-2-2.png"
                 alt="Ecosystem"
                 className="object-contain rounded-t-xl z-10"
                 fill
               />
               <Image
-                src="/images/useful_resource-2-1.png"
+                src="/images/resources/useful_resource-2-1.png"
                 alt="Ecosystem"
                 className="object-contain rounded-t-xl"
                 fill

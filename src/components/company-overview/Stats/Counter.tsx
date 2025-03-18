@@ -5,6 +5,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { useEffect, useState } from "react";
+
 import { parseStatValue, getValueSuffix } from "@/helpers";
 
 interface CounterAnimationProps {

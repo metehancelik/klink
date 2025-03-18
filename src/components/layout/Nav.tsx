@@ -1,16 +1,17 @@
-import Image from "next/image";
-import { HamburgerMenu } from "./HamburgerMenu";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import { ConnectWalletButton } from "./wallet/ConnectWallet";
 
-export function Nav() {
+import HamburgerMenu from "./HamburgerMenu";
+import { ConnectWalletButton } from "../wallet/ConnectWallet";
+
+export default function Nav() {
   return (
     <nav className="flex relative bg-[#16151F] rounded-tr-4xl">
       <div className="flex flex-1 lg:flex-none">
         <div className="flex gap-4 bg-white relative items-center justify-center sm:pl-4 md:pl-[60px] pl-1">
           <Image
-            src="/images/klink.svg"
+            src="/images/hero/klink.svg"
             alt="Klink Finance"
             width={0}
             height={0}
@@ -19,7 +20,7 @@ export function Nav() {
         </div>
 
         <Image
-          src="/images/seperator.svg"
+          src="/images/hero/seperator.svg"
           alt="Klink Finance"
           className="md:-ml-3 md:h-[84px] sm:h-[60px] sm:-ml-2 sm:w-[70px] md:w-[93px] w-[64px] -ml-2 -mr-5"
           width={0}
@@ -43,7 +44,7 @@ export function Nav() {
         <div className="ml-auto hidden xl:flex items-center gap-4 text-white font-semibold shadow-[0px_4px_12px_rgba(0,0,0,0.1)] rounded-full px-2 py-1 z-30 relative">
           <button className="border border-[#9A8AFE80] rounded-full px-5 py-4 flex items-center gap-1.5 bg-[#674EFF1A]">
             <Image
-              src="/images/klink-token.png"
+              src="/images/hero/klink-token.png"
               alt="Klink Finance"
               width={24}
               height={24}

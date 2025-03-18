@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
 import { Check } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
 
 export function AuditedBy() {
   const [copied, setCopied] = useState(false);
@@ -18,7 +18,7 @@ export function AuditedBy() {
       <div className="flex border-2 border-[#9C78ED33] rounded-2xl items-stretch h-full">
         <div className="flex items-center border-r-2 border-primary md:p-3 p-2 bg-[#242036] rounded-l-2xl">
           <Image
-            src="/images/certik.svg"
+            src="/images/hero/certik.svg"
             alt="Klink Info"
             width={98}
             height={24}
@@ -37,7 +37,12 @@ export function AuditedBy() {
             {copied ? (
               <Check className="w-4 h-4 text-primary" />
             ) : (
-              <Image src="/images/copy.svg" alt="Copy" width={17} height={17} />
+              <Image
+                src="/images/hero/copy.svg"
+                alt="Copy"
+                width={17}
+                height={17}
+              />
             )}
           </button>
         </div>

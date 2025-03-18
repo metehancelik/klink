@@ -1,6 +1,6 @@
 import { PartnersCarousel } from "./Carousel";
 
-export function Partners() {
+export default function Partners() {
   return (
     <section className="max-w-[1800px] mx-auto px-4 py-8 sm:py-12 md:py-16 sm:px-6 lg:px-8">
       <div className="relative">

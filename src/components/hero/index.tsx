@@ -1,8 +1,11 @@
-import { Nav } from "./Nav";
-import { AuditedBy } from "@/components/klink-info/AuditedBy";
-import { ListedOn } from "@/components/klink-info/ListedOn";
 import Image from "next/image";
-export function Hero() {
+
+import { AuditedBy } from "./AuditedBy";
+import { ListedOn } from "./ListedOn";
+
+import Nav from "@/components/layout/Nav";
+
+export default function Hero() {
   return (
     <div className="h-screen flex flex-col relative overflow-hidden">
       <div className="absolute top-0 right-0 h-full w-2/4 bg-gradient-to-r from-transparent to-white/10 z-20"></div>
@@ -38,15 +41,14 @@ export function Hero() {
             sm:left-auto sm:translate-x-0 sm:translate-y-1/3
             md:translate-y-1/4 md:translate-x-1/5
             lg:translate-y-2/5"
-        poster="/images/klink_coin.webp"
+        poster="/images/hero/klink_coin.webp"
       >
         <source
           src="https://klink-cdn.klink.finance/ecosystem/klink_coin.webm"
           type="video/webm"
         />
-        <source src="/images/klink_coin.mov" type="video/quicktime" />
         <Image
-          src="/images/klink_coin.webp"
+          src="/images/hero/klink_coin.webp"
           alt="Klink Coin"
           width={1500}
           height={1500}

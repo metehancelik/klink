@@ -1,6 +1,7 @@
-import { Badge } from "../ui/badge";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+
+import { Badge } from "@/components/ui/badge";
 
 export function EcosystemCard({
   card,

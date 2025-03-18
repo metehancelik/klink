@@ -1,8 +1,8 @@
-import { Partners } from "./Partners";
-import { Stats } from "./Stats";
-import { Mission } from "./Mission";
+import Mission from "./Mission";
+import Partners from "./Partners";
+import Stats from "./Stats";
 
-export function CompanyOverview() {
+export default function CompanyOverview() {
   return (
     <div>
       <Partners />

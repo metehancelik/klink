@@ -1,10 +1,11 @@
 "use client";
 
-import { useAccount, useConnect, useDisconnect } from "wagmi";
-import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import { useState, useRef, useEffect } from "react";
+import { useAccount, useConnect, useDisconnect } from "wagmi";
+
+import { Button } from "@/components/ui/button";
 import { showToast } from "@/lib/toast";
 
 interface EthereumRequest {
@@ -126,7 +127,7 @@ export function ConnectWalletButton() {
         >
           <div className="absolute -top-[5px] left-1/2 -translate-x-1/2 w-6 h-1 bg-[#fff] rounded blur-sm transition-all duration-300" />
           <Image
-            src="/images/base-logo.svg"
+            src="/images/hero/base-logo.svg"
             alt="Klink Finance"
             width={24}
             height={24}

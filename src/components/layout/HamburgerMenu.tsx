@@ -1,20 +1,21 @@
 "use client";
 
+import { Menu, ChevronDown, ChevronRight, X } from "lucide-react";
 import * as React from "react";
 import { useEffect } from "react";
-import { Menu, ChevronDown, ChevronRight, X } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
 
 type MenuItem = {
@@ -87,7 +88,7 @@ const MenuItemComponent: React.FC<{
   );
 };
 
-export function HamburgerMenu() {
+export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isAnimating, setIsAnimating] = React.useState(false);
   const [animationState, setAnimationState] = React.useState<
@@ -191,8 +192,8 @@ export function HamburgerMenu() {
           animationState === "opening" || animationState === "open"
             ? "animate-slideSheetIn"
             : animationState === "closing"
-            ? "animate-slideSheetOut"
-            : ""
+              ? "animate-slideSheetOut"
+              : ""
         }`}
       >
         <div className="absolute top-5 right-5">

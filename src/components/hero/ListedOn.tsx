@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useAnimationControls } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
+
 import { listedOn } from "@/data";
 
 export function ListedOn() {

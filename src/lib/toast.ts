@@ -1,5 +1,5 @@
-import { toast } from "sonner";
 import { MouseEvent } from "react";
+import { toast } from "sonner";
 
 type ToastType = "default" | "success" | "error" | "warning" | "info";
 

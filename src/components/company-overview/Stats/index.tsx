@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
-import { stats } from "@/data";
 
 import { CounterAnimation } from "./Counter";
 
-export function Stats() {
+import { stats } from "@/data";
+
+export default function Stats() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
       <div className="md:hidden flex flex-col gap-8">
