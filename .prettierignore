@@ -1,0 +1,31 @@
+# Build artifacts
+.next/
+build/
+dist/
+out/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Binary files
+*.ico
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# Cache
+.eslintcache
+.cache/
+
+# Package files
+package-lock.json
+yarn.lock 
