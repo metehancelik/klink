@@ -90,26 +90,12 @@ const MenuItemComponent: React.FC<{
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [isAnimating, setIsAnimating] = React.useState(false);
-  const [animationState, setAnimationState] = React.useState<
-    "open" | "closed" | "opening" | "closing"
-  >("closed");
 
   const handleOpenChange = (open: boolean) => {
     if (open) {
       setIsOpen(true);
-      setAnimationState("opening");
-      setTimeout(() => {
-        setAnimationState("open");
-      }, 400);
     } else {
-      setAnimationState("closing");
-      setIsAnimating(true);
-      setTimeout(() => {
-        setIsOpen(false);
-        setIsAnimating(false);
-        setAnimationState("closed");
-      }, 400);
+      setIsOpen(false);
     }
   };
 
@@ -168,7 +154,7 @@ export default function HamburgerMenu() {
   }, []);
 
   return (
-    <Sheet open={isOpen || isAnimating} onOpenChange={handleOpenChange}>
+    <Sheet open={isOpen} onOpenChange={handleOpenChange}>
       <SheetTrigger asChild>
         <Button
           variant="ghost"
@@ -189,11 +175,7 @@ export default function HamburgerMenu() {
       <SheetContent
         side="right"
         className={`bg-[#16151F] text-white border-l border-[#9A8AFE]/30 ${
-          animationState === "opening" || animationState === "open"
-            ? "animate-slideSheetIn"
-            : animationState === "closing"
-              ? "animate-slideSheetOut"
-              : ""
+          isOpen ? "animate-slideSheetIn" : "animate-slideSheetOut"
         }`}
       >
         <div className="absolute top-5 right-5">
