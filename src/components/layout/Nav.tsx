@@ -36,9 +36,6 @@ export default function Nav() {
           <Link href="/#" className="hover:text-primary transition-colors">
             Buy $KLINK
           </Link>
-          <Link href="/wallet" className="hover:text-primary transition-colors">
-            Wallet
-          </Link>
           <span className="opacity-50 cursor-default">Stake $KLINK</span>
         </div>
         <div className="ml-auto hidden xl:flex items-center gap-4 text-white font-semibold shadow-[0px_4px_12px_rgba(0,0,0,0.1)] rounded-full px-2 py-1 z-30 relative">
