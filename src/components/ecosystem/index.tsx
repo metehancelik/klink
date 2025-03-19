@@ -134,42 +134,47 @@ export default function Ecosystem() {
           </ResourceCard>
           <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F] flex flex-col">
             <CardHeader className="p-0 relative sm:h-[310px] h-[165px] gap-0 overflow-hidden">
-              <div className="flex gap-4 -mx-30 flex-wrap justify-center sm:h-[310px] h-[165px] items-center">
-                <Image
-                  src="/images/resources/kucoin.png"
-                  alt="Ecosystem"
-                  width={190}
-                  height={150}
-                  className="object-contain z-20"
-                />
-                <Image
-                  src="/images/resources/mexc.png"
-                  alt="Ecosystem"
-                  width={280}
-                  height={150}
-                  className="object-contain z-20"
-                />
-                <Image
-                  src="/images/resources/gateio.png"
-                  alt="Ecosystem"
-                  width={190}
-                  height={150}
-                  className="object-contain z-20"
-                />
-                <Image
-                  src="/images/resources/bitpanda.png"
-                  alt="Ecosystem"
-                  width={190}
-                  height={150}
-                  className="object-contain z-20"
-                />
-                <Image
-                  src="/images/resources/uniswap.png"
-                  alt="Ecosystem"
-                  width={190}
-                  height={150}
-                  className="object-contain z-20"
-                />
+              <div className="flex gap-4 md:-mx-30 -mx-4 flex-wrap justify-center sm:h-[310px] h-[165px] items-center content-center">
+                <div className="relative sm:h-[50px] h-8 sm:w-[160px] w-25">
+                  <Image
+                    src="/images/resources/kucoin.png"
+                    alt="Ecosystem"
+                    fill
+                    className="object-contain z-20"
+                  />
+                </div>
+                <div className="relative sm:h-[50px] h-8 sm:w-[240px] w-36">
+                  <Image
+                    src="/images/resources/mexc.png"
+                    alt="Ecosystem"
+                    fill
+                    className="object-contain z-20"
+                  />
+                </div>
+                <div className="relative sm:h-[50px] h-8 sm:w-[160px] w-25">
+                  <Image
+                    src="/images/resources/gateio.png"
+                    alt="Ecosystem"
+                    fill
+                    className="object-contain z-20"
+                  />
+                </div>
+                <div className="relative sm:h-[50px] h-8 sm:w-[165px] w-25">
+                  <Image
+                    src="/images/resources/bitpanda.png"
+                    alt="Ecosystem"
+                    fill
+                    className="object-contain z-20"
+                  />
+                </div>
+                <div className="relative sm:h-[50px] h-8 sm:w-[165px] w-25">
+                  <Image
+                    src="/images/resources/uniswap.png"
+                    alt="Ecosystem"
+                    fill
+                    className="object-contain z-20"
+                  />
+                </div>
               </div>
               <Image
                 src="/images/resources/dots.png"
