@@ -76,8 +76,8 @@ export default function Ecosystem() {
           Useful <span className="text-primary">Resources</span>
         </h2>
         <div className="grid grid-cols-6 gap-11">
-          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F]">
-            <CardHeader className="p-0 relative h-[300px] gap-0">
+          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F] flex flex-col">
+            <CardHeader className="p-0 relative sm:h-[310px] h-[165px] gap-0">
               <Image
                 src="/images/resources/useful_resource-1.png"
                 alt="Ecosystem"
@@ -101,8 +101,8 @@ export default function Ecosystem() {
               </div>
             </CardContent>
           </ResourceCard>
-          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F]">
-            <CardHeader className="p-0 relative h-[300px] gap-0">
+          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F] flex flex-col">
+            <CardHeader className="p-0 relative sm:h-[310px] h-[165px] gap-0">
               <Image
                 src="/images/resources/useful_resource-2-2.png"
                 alt="Ecosystem"
@@ -132,9 +132,9 @@ export default function Ecosystem() {
               </div>
             </CardContent>
           </ResourceCard>
-          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F]">
-            <CardHeader className="p-0 relative h-[300px] gap-0 overflow-hidden">
-              <div className="flex gap-4 -mx-30 flex-wrap justify-center h-[300px] items-center">
+          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F] flex flex-col">
+            <CardHeader className="p-0 relative sm:h-[310px] h-[165px] gap-0 overflow-hidden">
+              <div className="flex gap-4 -mx-30 flex-wrap justify-center sm:h-[310px] h-[165px] items-center">
                 <Image
                   src="/images/resources/kucoin.png"
                   alt="Ecosystem"
@@ -179,14 +179,16 @@ export default function Ecosystem() {
               />
             </CardHeader>
             <CardContent className="bg-[#16151F] text-white p-8 rounded-b-2xl flex flex-col flex-1">
-              <p className="text-xl font-semibold mb-1">Buy $KLINK Token</p>
+              <p className="text-xl font-semibold mb-1">
+                Visit CEX & DEX Listings
+              </p>
               <p className="opacity-60 font-medium">
-                Hold $KLINK by directly swapping other tokens on Base network
-                from this portal.
+                Trade $KLINK on KuCoin, MEXC, Gate.io, and other leading crypto
+                exchanges.
               </p>
               <div className="flex mt-auto">
                 <Button className="mt-4 bg-transparent text-white border border-[#674EFF] rounded-full px-10 py-4 font-medium text-md">
-                  Buy Now
+                  Visit
                 </Button>
                 <Button className="mt-4 bg-transparent text-white border border-[#674EFF] rounded-full p-2 font-medium text-md">
                   <ChevronRight width={24} height={24} />
@@ -194,8 +196,8 @@ export default function Ecosystem() {
               </div>
             </CardContent>
           </ResourceCard>
-          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-4 col-span-6 bg-[#16151F] xl:order-1 order-2">
-            <CardHeader className="p-0 relative h-[300px] gap-0 bg-[#16151F] rounded-t-xl">
+          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-4 col-span-6 bg-[#16151F] xl:order-1 order-2 flex flex-col">
+            <CardHeader className="p-0 relative sm:h-[310px] h-[165px] gap-0 bg-[#16151F] rounded-t-xl">
               <Image
                 src="/images/resources/resource-4-1.png"
                 alt="Ecosystem"
@@ -213,24 +215,46 @@ export default function Ecosystem() {
             <CardContent className="bg-[#16151F] text-white p-8 rounded-b-2xl flex flex-1 flex-col pr-20">
               <p className="text-xl font-semibold mb-1">Join Klink Community</p>
               <p className="opacity-60 font-medium">
-                Since 2024, Klink has served over 500,000 users with its
-                multi-chain self-custodial wallet at the core. Built on this
-                foundation are Klink&apos;s Airdrop Centre and Web3 Offerwall,
-                providing seamless access to rewards and earning opportunities
-                for its growing global community.
+                Join hundreds of thousands of Klink community members to stay up
+                to date with live campaigns, ecosystem news, and discussions
+                across our official social media accounts.
               </p>
-              <div className="flex mt-auto">
-                <Button className="mt-4 bg-transparent text-white border border-[#674EFF] rounded-full px-10 py-4 font-medium text-md">
-                  Download
-                </Button>
-                <Button className="mt-4 bg-transparent text-white border border-[#674EFF] rounded-full p-2 font-medium text-md">
-                  <ChevronRight width={24} height={24} />
-                </Button>
+              <div className="flex mt-auto sm:gap-3.5 gap-2.5">
+                <Image
+                  src="/images/social/X.png"
+                  alt="Ecosystem"
+                  width={42}
+                  height={42}
+                />
+                <Image
+                  src="/images/social/Telegram.png"
+                  alt="Ecosystem"
+                  width={42}
+                  height={42}
+                />
+                <Image
+                  src="/images/social/Discord.png"
+                  alt="Ecosystem"
+                  width={42}
+                  height={42}
+                />
+                <Image
+                  src="/images/social/Youtube.png"
+                  alt="Ecosystem"
+                  width={42}
+                  height={42}
+                />
+                <Image
+                  src="/images/social/Linkendin.png"
+                  alt="Ecosystem"
+                  width={42}
+                  height={42}
+                />
               </div>
             </CardContent>
           </ResourceCard>
-          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F] xl:order-2 order-1">
-            <CardHeader className="p-0 relative h-[300px] gap-0">
+          <ResourceCard className="w-full h-full p-0 border-0 rounded-2xl gap-0 shadow-[0px_0px_10px_0px_rgba(255,255,255,0.1)] xl:col-span-2 md:col-span-3 col-span-6 bg-[#16151F] xl:order-2 order-1 flex flex-col">
+            <CardHeader className="p-0 relative sm:h-[310px] h-[165px] gap-0">
               <Image
                 src="/images/resources/resource-5-1.png"
                 alt="Ecosystem"
@@ -246,19 +270,14 @@ export default function Ecosystem() {
               />
             </CardHeader>
             <CardContent className="bg-[#16151F] text-white p-8 rounded-b-2xl flex flex-col flex-1">
-              <p className="text-xl font-semibold mb-1">
-                Wallet & Community Quest Platform
-              </p>
+              <p className="text-xl font-semibold mb-1">Link3</p>
               <p className="opacity-60 font-medium">
-                Since 2024, Klink has served over 500,000 users with its
-                multi-chain self-custodial wallet at the core. Built on this
-                foundation are Klink&apos;s Airdrop Centre and Web3 Offerwall,
-                providing seamless access to rewards and earning opportunities
-                for its growing global community.
+                Learn more about Klink and our ongoing promotions from the Klink
+                Link3 profile.
               </p>
               <div className="flex mt-auto">
                 <Button className="mt-4 bg-transparent text-white border border-[#674EFF] rounded-full px-10 py-4 font-medium text-md">
-                  Download
+                  Go to Link3
                 </Button>
                 <Button className="mt-4 bg-transparent text-white border border-[#674EFF] rounded-full p-2 font-medium text-md">
                   <ChevronRight width={24} height={24} />
