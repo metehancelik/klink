@@ -219,7 +219,7 @@ export default function Ecosystem() {
                 to date with live campaigns, ecosystem news, and discussions
                 across our official social media accounts.
               </p>
-              <div className="flex mt-auto sm:gap-3.5 gap-2.5">
+              <div className="flex xl:mt-auto md:mt-5 mt-3.5 sm:gap-3.5 gap-2.5">
                 <Image
                   src="/images/social/X.png"
                   alt="Ecosystem"
